@@ -7,6 +7,7 @@ TagManager:
   - botaoPlay
   - botaoCredito
   - botaoConfig
+  - entrada
   layers:
   - Default
   - TransparentFX
