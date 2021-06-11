@@ -4,18 +4,15 @@ using UnityEngine;
 
 public class CameraBehavior : MonoBehaviour
 {
-    private Vector3 camPosition;
-    public GameObject player;
-    private Vector3 playerPosition;
-    void Start()
-    {
-       playerPosition = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
-       
-    }
+    [SerializeField]
+    Vector3 camera;
+    public Transform player;
+    [Range (0,1)]
+    public float suavidade;
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+           camera = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
+           transform.position = Vector3.Lerp(transform.position ,camera, suavidade);
     }
 }
