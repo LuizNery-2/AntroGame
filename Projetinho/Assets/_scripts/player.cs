@@ -16,7 +16,6 @@ public class player : MonoBehaviour
     float gravidade;
     void Start()
     {
-        
         animator = GetComponent<Animator>();
         gravidade = 2 * alturaMax/ Mathf.Pow(tempo, 2); 
         controller = GetComponent<CharacterController>();
