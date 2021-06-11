@@ -38,7 +38,7 @@ public class player : MonoBehaviour
         if(controller.isGrounded){
             velocidadeV = Vector3.down;
         }
-        if(Input.GetKeyDown(KeyCode.Space) && controller.isGrounded){
+        if(Input.GetKey("space") && controller.isGrounded){
             velocidadeV = JumpSpeed * Vector3.up;
         }
         velocidadeH = speed * Vector3.right * Input.GetAxis("Horizontal");
