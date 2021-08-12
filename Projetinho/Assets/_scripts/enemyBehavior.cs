@@ -2,11 +2,14 @@ using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
+[RequireComponent(typeof(IDamageable))]
 public class enemyBehavior : MonoBehaviour
 {
     [SerializeField]
+    
     public Transform player;
+    IDamageable damageable;
     Vector3 velocidade;
     public float speed;
     Vector3 velocidadeV;
@@ -18,13 +21,15 @@ public class enemyBehavior : MonoBehaviour
     private float initialPosition;
     private void Start() {
         initialPosition = transform.position.x;
+        damageable = GetComponent<IDamageable>();
         controller = GetComponent<CharacterController>();
         velocidadeV = Vector3.down;
         facingLeft = transform.localScale;
         facingRight = transform.localScale;
         facingLeft.x = facingRight.x * -1;
-        
+        damageable.DamageEvent+= OnDeath;
     }
+
     void FixedUpdate()
     { MovimentoIni();
        
@@ -45,7 +50,15 @@ public class enemyBehavior : MonoBehaviour
                  
             
         }
-       
-        
+     
+
+    }
+
+    private void OnDestroy(){
+          damageable.DamageEvent -= OnDeath;
+    }
+
+    private void OnDeath(){
+          
     }
 }

@@ -11,7 +11,7 @@ public class CameraBehavior : MonoBehaviour
     public float suavidade;
 
     void FixedUpdate()
-    {
+    {      
            camera = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
            transform.position = Vector3.Lerp(transform.position ,camera, suavidade);
     }
