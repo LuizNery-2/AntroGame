@@ -2,9 +2,16 @@ using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
+
+[RequireComponent(typeof(IDamageable))]
 public class player : MonoBehaviour
-{
+{   
+    [SerializeField]GameObject weaponObject;
+    public IWeapon weapon {get; private set; }
+    
+    IDamageable damageable;
     CharacterController controller;
     Vector3 velocidadeH;
     Vector3 velocidadeV;
@@ -26,10 +33,18 @@ public class player : MonoBehaviour
         gravidade = 2 * alturaMax/ Mathf.Pow(tempo, 2); 
         controller = GetComponent<CharacterController>();
         JumpSpeed = gravidade * tempo;
+        damageable = GetComponent<IDamageable>();
+        if (weaponObject != null)
+        {
+           weapon = weaponObject.GetComponent<IWeapon>();
+           
+        }
+        damageable.DamageEvent += OnDamage;
     }
 
 
     private void FixedUpdate() {
+
         Movimento();
 
     }
@@ -69,5 +84,33 @@ public class player : MonoBehaviour
         velocidadefinal = velocidadeH + velocidadeV;
         controller.Move(velocidadefinal * Time.deltaTime);
         
+         if(Input.GetKey(KeyCode.H))
+        {
+           weapon.Attack();
+           
+        }
+         animator.SetBool("Atacando", weapon.IsAttacking);
+       
     }
+
+
+   private void OnDestroy(){
+       if(damageable != null)
+       {    
+            damageable.DamageEvent -= OnDamage;
+       }
+       
+   }
+
+    private void  OnDamage()
+    {   
+        enabled = false;
+        animator.SetBool("pulando", false);
+        animator.SetBool("Correr", false);
+        
+
+        UnityEngine.Debug.Log("Tomei dano!!");
+    }
+    
+ 
 }
