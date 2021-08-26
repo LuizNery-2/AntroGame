@@ -9,8 +9,9 @@ public class enemyBehavior : MonoBehaviour
     [SerializeField]
     float PatrolTime = 3f;
     IDamageable damageable;
-    Rigidbody rb; 
-    
+    Rigidbody rb;
+
+
     public float speed;
     private Vector3 facingRight;
     private Vector3 facingLeft;
@@ -20,9 +21,9 @@ public class enemyBehavior : MonoBehaviour
         initialPosition = transform.position.x;
         rb = GetComponent<Rigidbody>();
         damageable = GetComponent<IDamageable>();
-        facingLeft = transform.localScale;
-        facingRight = transform.localScale;
-        facingLeft.x = facingRight.x * -1;
+        facingLeft = transform.eulerAngles;
+        facingRight = transform.eulerAngles;
+        facingLeft.y = facingRight.y + 180;
         damageable.DamageEvent+= OnDeath;
         StartCoroutine(MovimentoIni());
     }
@@ -38,6 +39,7 @@ public class enemyBehavior : MonoBehaviour
     }
 
     private void OnDeath(){
+        
         Destroy(gameObject);
           
     }
@@ -47,13 +49,13 @@ public class enemyBehavior : MonoBehaviour
       while (true)
       {
        rb.velocity = new Vector3(speed, 0, 0);
-       transform.localScale = facingRight;
+       transform.eulerAngles = facingRight;
        yield return new WaitForSeconds(PatrolTime);
        rb.velocity = new Vector3(speed*-1, 0, 0);
-       transform.localScale = facingLeft;  
+       transform.eulerAngles = facingLeft;  
        yield return new WaitForSeconds(PatrolTime); 
        rb.velocity = new Vector3(speed*-1, 0, 0);
-       transform.localScale = facingRight; 
+       transform.eulerAngles = facingRight; 
       }
          
      
