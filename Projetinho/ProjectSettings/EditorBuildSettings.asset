@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Creditos.unity
     guid: 0ca5939aba57ac040a5abfaea95be5a7
+  - enabled: 1
+    path: Assets/Scenes/Derrota.unity
+    guid: 2e65218763f25c146bffda7a8d112f87
   m_configObjects: {}

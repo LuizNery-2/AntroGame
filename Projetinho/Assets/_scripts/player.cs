@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 [RequireComponent(typeof(IDamageable))]
@@ -25,10 +27,11 @@ public class player : MonoBehaviour
     public float tempo;
     float JumpSpeed;
     float gravidade;
-    [SerializeField] public GameObject UI;
-    PauseMenu pause;
+    [SerializeField] 
+    private float LoseTime;
+    
     void Start()
-    {   pause = UI.GetComponent<PauseMenu>(); 
+    {    
         facingRight = transform.eulerAngles;
         facingLeft = transform.eulerAngles;
         facingLeft.y = facingRight.y + 180;
@@ -78,7 +81,7 @@ public class player : MonoBehaviour
         if(controller.isGrounded){
             velocidadeV = Vector3.down;
         }
-        if(Input.GetKey("space") && controller.isGrounded){
+        if(Input.GetKey("space") && controller.isGrounded || Input.GetKey(KeyCode.W) && controller.isGrounded){
             velocidadeV = JumpSpeed * Vector3.up;
             animator.SetBool("pulando", true);
         }
@@ -112,10 +115,14 @@ public class player : MonoBehaviour
     {   
         enabled = false;
         animator.enabled = false;
-        
+        StartCoroutine(LoseWindow());
 
         UnityEngine.Debug.Log("Tomei dano!!");
     }
     
- 
-}
+   private IEnumerator LoseWindow()
+   {
+      yield return new WaitForSeconds(LoseTime);
+      SceneManager.LoadScene("Derrota");
+   } 
+}    
