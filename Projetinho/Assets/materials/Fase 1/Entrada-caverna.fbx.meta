@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 677530b3ee77af647853b1da8ebd5b5e
+guid: 7e1dcda5f0b353c45b0e7cc9cb5b944b
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Entrada
+    second: {fileID: 2100000, guid: 71d372a4d00acc24081c346a781da41d, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: paleta
+    second: {fileID: 2800000, guid: 6fbd83a1664ee1442aec8d71cf2228a5, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

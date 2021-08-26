@@ -7,58 +7,58 @@ using System;
 public class enemyBehavior : MonoBehaviour
 {
     [SerializeField]
-    
-    public Transform player;
+    float PatrolTime = 3f;
     IDamageable damageable;
-    Vector3 velocidade;
+    Rigidbody rb;
+
+
     public float speed;
-    Vector3 velocidadeV;
-    Vector3 velocidadefinal;
     private Vector3 facingRight;
     private Vector3 facingLeft;
-    Vector3 enemy;
-    CharacterController controller;
+  
     private float initialPosition;
     private void Start() {
         initialPosition = transform.position.x;
+        rb = GetComponent<Rigidbody>();
         damageable = GetComponent<IDamageable>();
-        controller = GetComponent<CharacterController>();
-        velocidadeV = Vector3.down;
-        facingLeft = transform.localScale;
-        facingRight = transform.localScale;
-        facingLeft.x = facingRight.x * -1;
+        facingLeft = transform.eulerAngles;
+        facingRight = transform.eulerAngles;
+        facingLeft.y = facingRight.y + 180;
         damageable.DamageEvent+= OnDeath;
+        StartCoroutine(MovimentoIni());
     }
 
     void FixedUpdate()
-    { MovimentoIni();
+    { 
        
     }
-       private void MovimentoIni()
-    {      velocidade = speed * Vector3.right * Time.deltaTime;
-           velocidadefinal = velocidade + velocidadeV;
-            controller.Move(velocidadefinal);
-        
-        if(transform.position.x - initialPosition > 2f){
-            speed *= -1;
-             transform.localScale = facingLeft;
-        }
-        else if(transform.position.x - initialPosition < -2f){
-              speed *= -1;
-              transform.localScale = facingRight;
-                 
-                 
-            
-        }
-     
-
-    }
+ 
 
     private void OnDestroy(){
           damageable.DamageEvent -= OnDeath;
     }
 
     private void OnDeath(){
+        
+        Destroy(gameObject);
           
     }
+
+    private IEnumerator MovimentoIni()
+    {
+      while (true)
+      {
+       rb.velocity = new Vector3(speed, 0, 0);
+       transform.eulerAngles = facingRight;
+       yield return new WaitForSeconds(PatrolTime);
+       rb.velocity = new Vector3(speed*-1, 0, 0);
+       transform.eulerAngles = facingLeft;  
+       yield return new WaitForSeconds(PatrolTime); 
+       rb.velocity = new Vector3(speed*-1, 0, 0);
+       transform.eulerAngles = facingRight; 
+      }
+         
+     
+    }
+
 }

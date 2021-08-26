@@ -9,6 +9,7 @@ using System;
 public class player : MonoBehaviour
 {   
     [SerializeField]GameObject weaponObject;
+    
     public IWeapon weapon {get; private set; }
     
     IDamageable damageable;
@@ -24,11 +25,13 @@ public class player : MonoBehaviour
     public float tempo;
     float JumpSpeed;
     float gravidade;
+    [SerializeField] public GameObject UI;
+    PauseMenu pause;
     void Start()
-    {
-        facingRight = transform.localScale;
-        facingLeft = transform.localScale;
-        facingLeft.x = facingRight.x * -1;
+    {   pause = UI.GetComponent<PauseMenu>(); 
+        facingRight = transform.eulerAngles;
+        facingLeft = transform.eulerAngles;
+        facingLeft.y = facingRight.y + 180;
         animator = GetComponent<Animator>();
         gravidade = 2 * alturaMax/ Mathf.Pow(tempo, 2); 
         controller = GetComponent<CharacterController>();
@@ -45,8 +48,11 @@ public class player : MonoBehaviour
 
     private void FixedUpdate() {
 
+    
         Movimento();
-
+          
+    
+     
     }
 
     private void Movimento(){
@@ -62,11 +68,11 @@ public class player : MonoBehaviour
 
 
         if(Input.GetAxis("Horizontal") > 0){
-            transform.localScale = facingRight;
+            transform.eulerAngles = facingRight;
             
         }
         else if(Input.GetAxis("Horizontal") < 0){
-            transform.localScale = facingLeft;
+            transform.eulerAngles = facingLeft;
         }
      
         if(controller.isGrounded){
@@ -105,8 +111,7 @@ public class player : MonoBehaviour
     private void  OnDamage()
     {   
         enabled = false;
-        animator.SetBool("pulando", false);
-        animator.SetBool("Correr", false);
+        animator.enabled = false;
         
 
         UnityEngine.Debug.Log("Tomei dano!!");
