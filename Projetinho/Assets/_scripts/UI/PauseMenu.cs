@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour
     [SerializeField]
     public bool isPaused {  get; private set; }
     public GameObject pausePanel;
+    
     public string cena;
 
 

@@ -6,12 +6,6 @@ public class TriggerDamage : MonoBehaviour
         
 {       
 
-    [SerializeField]
-
-         private int damage = 10;
-
-      
-
        private void OnTriggerEnter(Collider other) {
             
 
@@ -19,7 +13,7 @@ public class TriggerDamage : MonoBehaviour
             IDamageable damageable = other.GetComponent<IDamageable>();
             if(damageable != null){
                 
-                damageable.TakeDamage(damage);
+                damageable.TakeDamage();
             }
        }
 }
