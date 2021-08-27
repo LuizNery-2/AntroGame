@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DeathOnDamage : MonoBehaviour , IDamageable
-{
+{     
       public event Action DamageEvent;
-      public void TakeDamage(int damage)
+      private int life;
+      public void TakeDamage()
       {
               DamageEvent.Invoke();
       }   

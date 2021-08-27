@@ -29,9 +29,9 @@ public class player : MonoBehaviour
     float gravidade;
     [SerializeField] 
     private float LoseTime;
-    
+    public int life{get; private set;}
     void Start()
-    {    
+    {   life = 100;
         facingRight = transform.eulerAngles;
         facingLeft = transform.eulerAngles;
         facingLeft.y = facingRight.y + 180;
@@ -112,10 +112,15 @@ public class player : MonoBehaviour
    }
 
     private void  OnDamage()
-    {   
-        enabled = false;
-        animator.enabled = false;
-        StartCoroutine(LoseWindow());
+    {   life -= 20;
+
+         if (life <= 0)
+         {
+              enabled = false;
+             animator.enabled = false;
+             StartCoroutine(LoseWindow());
+         }
+       
 
         UnityEngine.Debug.Log("Tomei dano!!");
     }
