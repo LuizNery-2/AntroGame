@@ -17,4 +17,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Derrota.unity
     guid: 2e65218763f25c146bffda7a8d112f87
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: d28d10d7d78683343a89c84abcd0f509, type: 2}
