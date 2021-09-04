@@ -5,16 +5,22 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class LifeBar : MonoBehaviour
 {   [SerializeField]
-    player playerLife;
-    GameObject player;
-     [SerializeField]GameObject lifeBarImage20;
-     [SerializeField]GameObject lifeBarImage40;
-     [SerializeField]GameObject lifeBarImage60;
-     [SerializeField]GameObject lifeBarImage80;
-     [SerializeField]GameObject lifeBarImage100;
+     player playerLife;
+
+     [SerializeField]
+     GameObject lifeBarImage20;
+     [SerializeField]
+     GameObject lifeBarImage40;
+     [SerializeField]
+     GameObject lifeBarImage60;
+     [SerializeField]
+     GameObject lifeBarImage80;
+     [SerializeField]
+     GameObject lifeBarImage100;
+    
      
      void Start(){
-         playerLife = player.GetComponent<player>();
+         
           if (playerLife.life == 100 )
         {   
             
