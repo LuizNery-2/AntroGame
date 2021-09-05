@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 5412457546238856723}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.99, y: 1, z: 0.08}
-  m_LocalScale: {x: 7, y: 7, z: 1}
+  m_LocalScale: {x: 9.38, y: 9.38, z: 1.34}
   m_Children:
   - {fileID: 5412457547198009725}
   m_Father: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 5412457547198009725}
   - component: {fileID: 5412457547198009727}
   - component: {fileID: 5412457547198009726}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: TriggerDamage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,8 +206,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.24868517, y: 0.2838248, z: 1}
-  m_Center: {x: 0.0036364626, y: 0.12468502, z: 0}
+  m_Size: {x: 0.24868517, y: 0.30210754, z: 1}
+  m_Center: {x: 0.003636468, y: 0.1338263, z: 0}
 --- !u!114 &5412457547198009726
 MonoBehaviour:
   m_ObjectHideFlags: 0
