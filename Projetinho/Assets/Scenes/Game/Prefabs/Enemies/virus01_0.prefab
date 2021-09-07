@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5412457546238856725}
   - component: {fileID: 5412457546238856724}
   - component: {fileID: 5412457546238856730}
-  - component: {fileID: 5412457546238856728}
   - component: {fileID: 5412457546238856727}
   - component: {fileID: 5412457546238856729}
+  - component: {fileID: 8606406295815080079}
   m_Layer: 7
   m_Name: virus01_0
   m_TagString: Untagged
@@ -124,19 +124,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!65 &5412457546238856728
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5412457546238856723}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.17999999, y: 0.23999998, z: 0.2}
-  m_Center: {x: 0, y: 0.11999999, z: 0}
 --- !u!114 &5412457546238856727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,6 +150,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a05852c5d799646b059b40a46e7be6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &8606406295815080079
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5412457546238856723}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.1
+  m_Height: 0.24
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.12, z: 0}
 --- !u!1 &5412457547198009724
 GameObject:
   m_ObjectHideFlags: 0
