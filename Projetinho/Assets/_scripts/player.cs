@@ -29,12 +29,17 @@ public class player : MonoBehaviour
     float gravidade;
     [SerializeField] 
     private float LoseTime;
-    public int life{get; private set;}
+     int life;
+    [SerializeField]
+    SpriteRenderer playerSprite; 
+    bool IsInvencible = true;
     void Start()
-    {   life = 100;
+    {  
+         life = 100;
         facingRight = transform.eulerAngles;
         facingLeft = transform.eulerAngles;
         facingLeft.y = facingRight.y + 180;
+        playerSprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         gravidade = 2 * alturaMax/ Mathf.Pow(tempo, 2); 
         controller = GetComponent<CharacterController>();
@@ -45,6 +50,7 @@ public class player : MonoBehaviour
            weapon = weaponObject.GetComponent<IWeapon>();
            
         }
+
         damageable.DamageEvent += OnDamage;
     }
 
@@ -53,8 +59,7 @@ public class player : MonoBehaviour
 
     
         Movimento();
-          
-    
+      
      
     }
 
@@ -112,15 +117,21 @@ public class player : MonoBehaviour
    }
 
     private void  OnDamage()
-    {   life -= 20;
+    {   
+        if (IsInvencible)
+        {
+         
+         StartCoroutine(DamageMaker());
 
          if (life <= 0)
          {
-              enabled = false;
+            enabled = false;
              animator.enabled = false;
              StartCoroutine(LoseWindow());
          }
-       
+            
+        }
+        
 
         UnityEngine.Debug.Log("Tomei dano!!");
     }
@@ -130,4 +141,33 @@ public class player : MonoBehaviour
       yield return new WaitForSeconds(LoseTime);
       SceneManager.LoadScene("Derrota");
    } 
+     private IEnumerator DamageMaker(){
+         
+        IsInvencible = false;
+
+         for (float i = 0; i < 0.5f; i += 0.1f)      
+        {   
+            playerSprite.enabled = false;
+            yield return new WaitForSeconds(0.1f);
+            playerSprite.enabled = true;
+            yield return new WaitForSeconds(0.1f);
+
+
+        }
+       IsInvencible = true; 
+
+
+     }
+
+     public int SetPlayerLife(int a)
+     {
+          life -= a;
+          return life;
+     }
+
+     public int GetPlayerLife(){
+
+         return life;
+     }
+
 }    
