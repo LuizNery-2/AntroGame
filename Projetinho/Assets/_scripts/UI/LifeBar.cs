@@ -21,7 +21,7 @@ public class LifeBar : MonoBehaviour
      
      void Start(){
          
-          if (playerLife.life == 100 )
+          if (playerLife.GetPlayerLife() == 100 )
         {   
             
             lifeBarImage20.SetActive(false);
@@ -39,7 +39,7 @@ public class LifeBar : MonoBehaviour
      }
      private void LifeBarChange()
      {  
-        switch (playerLife.life)
+        switch (playerLife.GetPlayerLife())
         {   case 80:
             lifeBarImage20.SetActive(false);
             lifeBarImage40.SetActive(false);

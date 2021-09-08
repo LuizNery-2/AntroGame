@@ -63,21 +63,22 @@ public class Talk : MonoBehaviour
              if (dm.GetSpeechText().text == dm.sentences[dm.index])
             {
                 dm.NextSentence();
-                if(!dm.isSpeaking){
+                 if(!dm.isSpeaking){
                   contador++;
-                      if(dialogue[contador].GetIsPlayer()) {
+                      if(dialogue[contador].GetIsPlayer()) 
+                      {
 
                      dm = playerDialogue.GetComponent<DialogueManager>();
                      dm.SetDialogue(dialogue[contador].GetSpeechText(), dialogue[contador].GetprofileSprite());
                      
 
-                  }
+                     }
                   else
-                  {
+                   {
                     dm = NpcDialogue.GetComponent<DialogueManager>();
                     dm.SetDialogue(dialogue[contador].GetSpeechText(), dialogue[contador].GetprofileSprite());
                     
-                  }
+                   }  
                       
               
         

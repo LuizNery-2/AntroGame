@@ -29,7 +29,7 @@ public class player : MonoBehaviour
     float gravidade;
     [SerializeField] 
     private float LoseTime;
-    public int life{get; private set;}
+     int life;
     [SerializeField]
     SpriteRenderer playerSprite; 
     bool IsInvencible = true;
@@ -120,7 +120,7 @@ public class player : MonoBehaviour
     {   
         if (IsInvencible)
         {
-         life -= 20;
+         
          StartCoroutine(DamageMaker());
 
          if (life <= 0)
@@ -157,6 +157,17 @@ public class player : MonoBehaviour
        IsInvencible = true; 
 
 
+     }
+
+     public int SetPlayerLife(int a)
+     {
+          life -= a;
+          return life;
+     }
+
+     public int GetPlayerLife(){
+
+         return life;
      }
 
 }    

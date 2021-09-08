@@ -5,7 +5,8 @@ using UnityEngine;
 public class TriggerDamage : MonoBehaviour
         
 {       
-
+      [SerializeField]
+      int dano;
        private void OnTriggerEnter(Collider other) {
             
 
@@ -13,7 +14,7 @@ public class TriggerDamage : MonoBehaviour
             IDamageable damageable = other.GetComponent<IDamageable>();
             if(damageable != null){
                 
-                damageable.TakeDamage();
+                damageable.TakeDamage(dano);
             }
        }
 }
