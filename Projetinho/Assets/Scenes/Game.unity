@@ -532,6 +532,110 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5271270020311710371, guid: 04368c8d648d0ae4dab72d0f64251879, type: 3}
+--- !u!1 &80865131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 80865134}
+  - component: {fileID: 80865133}
+  - component: {fileID: 80865132}
+  m_Layer: 0
+  m_Name: Bebado_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &80865132
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80865131}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 11f2038662b93f342bf10ab3d58420e7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &80865133
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80865131}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 1897547441812173398, guid: 913ea193cddde05448d813886b37d8ae, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 4.8, y: 7.36}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &80865134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80865131}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.91, y: 2.26, z: 1.06}
+  m_LocalScale: {x: -0.30606022, y: 0.30606022, z: 0.30606022}
+  m_Children:
+  - {fileID: 1636808329}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &81556782 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5120184931812822364, guid: 04368c8d648d0ae4dab72d0f64251879, type: 3}
@@ -1254,10 +1358,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 311062309}
-  - component: {fileID: 311062311}
   - component: {fileID: 311062310}
+  - component: {fileID: 311062311}
+  - component: {fileID: 311062312}
   m_Layer: 0
-  m_Name: DialogueTrigger
+  m_Name: Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1271,7 +1376,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311062308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0699}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1493960779}
@@ -1289,26 +1394,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8283f34c036f9f24a98ce390472eabe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dm: {fileID: 1466543816}
   dialogue:
-  - {fileID: 11400000, guid: 14f8c1aaed12bd743bac793b4a6be20b, type: 2}
-  - {fileID: 11400000, guid: f3f678b663995fe4a86f0579ffce1170, type: 2}
-  - {fileID: 11400000, guid: 7a877cf5756fa354d8178a317899d708, type: 2}
+  - {fileID: 11400000, guid: ba3cccaffc9523f4daa80ac7fe4c311e, type: 2}
+  - {fileID: 11400000, guid: 4497fd1ff6cbec2419f06ed6a8feac99, type: 2}
+  - {fileID: 11400000, guid: bcb625ce158fade4994acdf1b51800c9, type: 2}
+  - {fileID: 11400000, guid: 848bfa9e338c345479161e1965777dab, type: 2}
+  - {fileID: 11400000, guid: d9086829ed2180441be1531cba825a85, type: 2}
+  - {fileID: 11400000, guid: 82ec405f25a717547948c83f55f81677, type: 2}
+  - {fileID: 11400000, guid: 8ce1158dd036e6848a212514eedb53bf, type: 2}
+  - {fileID: 11400000, guid: 42ea1c6cc29cadb4497c495c87415474, type: 2}
   playerDialogue: {fileID: 1480677160}
   NpcDialogue: {fileID: 1466543814}
---- !u!135 &311062311
-SphereCollider:
+--- !u!136 &311062311
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311062308}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
+  m_Radius: 0
+  m_Height: 0.24
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.02, z: 0}
+--- !u!54 &311062312
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311062308}
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &365368389
 GameObject:
   m_ObjectHideFlags: 0
@@ -2396,6 +2522,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3827261480945643848, guid: 382f2bab6f2309e44affaf0e719c9eba, type: 3}
   m_PrefabInstance: {fileID: 3827261481402400750}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &773670148 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3827261480945643844, guid: 382f2bab6f2309e44affaf0e719c9eba, type: 3}
+  m_PrefabInstance: {fileID: 3827261481402400750}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &774430634 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2805679593898607869, guid: 04368c8d648d0ae4dab72d0f64251879, type: 3}
@@ -2579,7 +2710,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2861,6 +2992,63 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1779321792754210346, guid: 04368c8d648d0ae4dab72d0f64251879, type: 3}
+--- !u!1 &949011401
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 949011402}
+  - component: {fileID: 949011403}
+  - component: {fileID: 949011404}
+  m_Layer: 3
+  m_Name: DialogueTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &949011402
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949011401}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 773670148}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &949011403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949011401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b82cf8096b055844293801e6ade0c013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &949011404
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949011401}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!20 &963194227 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 4115817398446465656, guid: 1e85818ec3f881c4da6fa6f68c2d6e0d, type: 3}
@@ -4256,9 +4444,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 311062310}
-        m_TargetAssemblyTypeName: Talk, Assembly-CSharp
-        m_MethodName: NextSpeaker
+      - m_Target: {fileID: 949011403}
+        m_TargetAssemblyTypeName: TriggerTalk, Assembly-CSharp
+        m_MethodName: NextTalk
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4880,7 +5068,7 @@ MonoBehaviour:
   dialogueObject: {fileID: 1466543814}
   profile: {fileID: 65961930}
   speechText: {fileID: 487440429}
-  typeSpeed: 0.05
+  typeSpeed: 0.02
 --- !u!1 &1480677160
 GameObject:
   m_ObjectHideFlags: 0
@@ -4933,7 +5121,7 @@ MonoBehaviour:
   dialogueObject: {fileID: 1480677160}
   profile: {fileID: 150092264}
   speechText: {fileID: 1839484688}
-  typeSpeed: 0.05
+  typeSpeed: 0.02
 --- !u!4 &1492807592 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4df3dabd3404c514a8434bbb2a0ec273, type: 3}
@@ -5329,6 +5517,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636687858}
   m_CullTransparentMesh: 1
+--- !u!1 &1636808328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1636808329}
+  - component: {fileID: 1636808331}
+  - component: {fileID: 1636808332}
+  - component: {fileID: 1636808330}
+  m_Layer: 0
+  m_Name: Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1636808329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636808328}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.29}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 80865134}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1636808330
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636808328}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1636808331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636808328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8283f34c036f9f24a98ce390472eabe5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+  - {fileID: 11400000, guid: baf64b5ad5f0f9c4892f43975e125f9d, type: 2}
+  - {fileID: 11400000, guid: 39145c08cdf7c1f4c856cbfd0d9e03ec, type: 2}
+  - {fileID: 11400000, guid: daa3c0f49783c0a4d9666aef3a2719de, type: 2}
+  - {fileID: 11400000, guid: adf181971224bca458a14e8e4aebb7a4, type: 2}
+  - {fileID: 11400000, guid: cd84d100758a2274caa6c8839fb67cef, type: 2}
+  - {fileID: 11400000, guid: 11672feea1a72694e9b8bc40c784cf13, type: 2}
+  playerDialogue: {fileID: 1480677160}
+  NpcDialogue: {fileID: 1466543814}
+--- !u!136 &1636808332
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636808328}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0
+  m_Height: 7.99
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.02, z: 0}
 --- !u!1 &1642130699
 GameObject:
   m_ObjectHideFlags: 0
@@ -5596,9 +5868,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 311062310}
-        m_TargetAssemblyTypeName: Talk, Assembly-CSharp
-        m_MethodName: NextSpeaker
+      - m_Target: {fileID: 949011403}
+        m_TargetAssemblyTypeName: TriggerTalk, Assembly-CSharp
+        m_MethodName: NextTalk
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

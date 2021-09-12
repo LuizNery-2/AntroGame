@@ -2,29 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Talk : MonoBehaviour 
+public class Talk : MonoBehaviour, ITalkable
 {
-   [SerializeField]
-    DialogueManager dm;
-   [SerializeField]
-    Dialogue[] dialogue;
-   [SerializeField]
-    GameObject playerDialogue;
-    [SerializeField]
-    GameObject NpcDialogue;
-    int contador; 
-
    
+    private DialogueManager dm;
+   [SerializeField]
+    private Dialogue[] dialogue;
+   [SerializeField]
+    private GameObject playerDialogue;
+    [SerializeField]
+    private GameObject NpcDialogue;
+    int contador;
 
 
-      
-
-   private void OnTriggerEnter(Collider other) {
+   public void SetTalk() {
        
          
          
-             if (other.tag == "Player")
-             { 
+            
                   if(dialogue[contador].GetIsPlayer()) {
 
                      dm = playerDialogue.GetComponent<DialogueManager>();
@@ -37,7 +32,7 @@ public class Talk : MonoBehaviour
                   }
                      
                
-             }
+            
              
          
      
@@ -45,12 +40,14 @@ public class Talk : MonoBehaviour
    }
 
 
-   private void OnTriggerExit(Collider other) {
+   public void DisableTalk() {
 
-       if (other.tag == "Player")
-     {
+     
          dm.DisableDialogue();
-     }
+         dm = null;
+         contador = 0;
+         
+     
        
    }
 
@@ -63,7 +60,7 @@ public class Talk : MonoBehaviour
              if (dm.GetSpeechText().text == dm.sentences[dm.index])
             {
                 dm.NextSentence();
-                 if(!dm.isSpeaking){
+                 if(!dm.isSpeaking && contador < dialogue.Length - 1 ){
                   contador++;
                       if(dialogue[contador].GetIsPlayer()) 
                       {
