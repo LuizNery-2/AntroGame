@@ -9,13 +9,19 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 310949f570ee82c4997cdab6ac8660a0
   - enabled: 1
-    path: Assets/Scenes/Game.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/CutsceneInicial.unity
+    guid: 92932816225890943ab5b61fdaf53882
   - enabled: 1
     path: Assets/Scenes/Creditos.unity
     guid: 0ca5939aba57ac040a5abfaea95be5a7
   - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
     path: Assets/Scenes/Derrota.unity
     guid: 2e65218763f25c146bffda7a8d112f87
+  - enabled: 1
+    path: Assets/Scenes/CutsceneFinal.unity
+    guid: bb3ed193875296d419360a3d0ada68e1
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: d28d10d7d78683343a89c84abcd0f509, type: 2}

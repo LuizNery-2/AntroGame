@@ -6,6 +6,8 @@ public class Pickaxe : TriggerDamage, IWeapon
 {
     [SerializeField] 
     private float attackTime = 0.2F;
+    [SerializeField]
+    AudioSource weaponSound;
 
     public bool IsAttacking{get; private set;} 
         private void Awake(){
@@ -17,6 +19,12 @@ public class Pickaxe : TriggerDamage, IWeapon
         if(IsAttacking == false){
         gameObject.SetActive(true);
         IsAttacking= true;
+        if (weaponSound != null)
+        {
+            
+            weaponSound.Play();
+
+        }
         StartCoroutine(PeformAttack());
         }
    }
