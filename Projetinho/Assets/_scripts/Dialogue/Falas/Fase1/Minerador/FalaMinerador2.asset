@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f65d52435d33543a8967b12da2a61b, type: 3}
+  m_Name: FalaMinerador2
+  m_EditorClassIdentifier: 
+  profileSprite: {fileID: 21300000, guid: bf94eb062538365428074f0b30cb7c10, type: 3}
+  speechText:
+  - "Ha ha ha, ah meu amigo, pior que os Virus s\xE3o esses desmiolados que os defendem."
+  - "At\xE9 parece que nem se despediram de algu\xE9m nessa loucura toda."
+  - Qual o seu nome?
+  isPlayer: 0

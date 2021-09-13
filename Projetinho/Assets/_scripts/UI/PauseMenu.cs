@@ -11,7 +11,13 @@ public class PauseMenu : MonoBehaviour
     [SerializeField]
     public bool isPaused {  get; private set; }
     public GameObject pausePanel;
+    [SerializeField]
+    LevelLoader home;
     
+    [SerializeField]
+    GameObject buttonMuted;
+    [SerializeField]
+    AudioListener Al;
     public string cena;
 
 
@@ -50,8 +56,21 @@ public class PauseMenu : MonoBehaviour
 
     }
     public void BackToHome(){
-        SceneManager.LoadScene(cena);
+        Time.timeScale = 1f;
+        home.LoadNextLevel(cena);
+
     }
     
+    public void EnableSound(){
+       Al.enabled = true;
+       buttonMuted.SetActive(false);
+
+    }
+
+     public void DisableSound(){
+       Al.enabled = false;
+       buttonMuted.SetActive(true);
+
+    }
 }
 

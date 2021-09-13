@@ -21,7 +21,7 @@ public class Talk : MonoBehaviour, ITalkable
          
             
                   if(dialogue[contador].GetIsPlayer()) {
-
+                    
                      dm = playerDialogue.GetComponent<DialogueManager>();
                      dm.SetDialogue(dialogue[contador].GetSpeechText(), dialogue[contador].GetprofileSprite());
 
@@ -55,7 +55,7 @@ public class Talk : MonoBehaviour, ITalkable
     
     public void NextSpeaker(){
              
-             
+            
              
              if (dm.GetSpeechText().text == dm.sentences[dm.index])
             {

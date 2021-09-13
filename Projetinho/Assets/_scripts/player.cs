@@ -13,7 +13,8 @@ public class player : MonoBehaviour
     [SerializeField]GameObject weaponObject;
     
     public IWeapon weapon {get; private set; }
-    
+    [SerializeField]
+    AudioSource jumpSound;
     IDamageable damageable;
     CharacterController controller;
     Vector3 velocidadeH;
@@ -33,8 +34,11 @@ public class player : MonoBehaviour
     [SerializeField]
     SpriteRenderer playerSprite; 
     bool IsInvencible = true;
+
+   
     void Start()
     {  
+        Cursor.lockState = CursorLockMode.None;
          life = 100;
         facingRight = transform.eulerAngles;
         facingLeft = transform.eulerAngles;
@@ -89,6 +93,7 @@ public class player : MonoBehaviour
         if(Input.GetKey("space") && controller.isGrounded || Input.GetKey(KeyCode.W) && controller.isGrounded){
             velocidadeV = JumpSpeed * Vector3.up;
             animator.SetBool("pulando", true);
+            jumpSound.Play();
         }
         else if(controller.isGrounded){
             animator.SetBool("pulando", false);
@@ -101,6 +106,7 @@ public class player : MonoBehaviour
          if(Input.GetKey(KeyCode.H))
         {
            weapon.Attack();
+           
            
         }
          animator.SetBool("Atacando", weapon.IsAttacking);
@@ -139,6 +145,8 @@ public class player : MonoBehaviour
    private IEnumerator LoseWindow()
    {
       yield return new WaitForSeconds(LoseTime);
+       Cursor.lockState = CursorLockMode.None;
+         Cursor.visible = true;
       SceneManager.LoadScene("Derrota");
    } 
      private IEnumerator DamageMaker(){
@@ -168,6 +176,10 @@ public class player : MonoBehaviour
      public int GetPlayerLife(){
 
          return life;
+     }
+     public bool GetIsInvencible(){
+        
+        return IsInvencible;
      }
 
 }    

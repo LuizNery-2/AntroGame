@@ -11,7 +11,8 @@ public class enemyBehavior : MonoBehaviour
     IDamageable damageable;
     Rigidbody rb;
 
-
+    [SerializeField]
+    AudioSource deathAudio;  
     public float speed;
     private Vector3 facingRight;
     private Vector3 facingLeft;
@@ -40,6 +41,7 @@ public class enemyBehavior : MonoBehaviour
 
     private void OnDeath(){
         
+        deathAudio.Play();
         Destroy(gameObject);
           
     }
@@ -60,5 +62,8 @@ public class enemyBehavior : MonoBehaviour
          
      
     }
+
+
+  
 
 }
