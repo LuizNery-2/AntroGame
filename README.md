@@ -1,6 +1,6 @@
 # AntroGame
 
-              Instalação do Jogo
+           Instalação do Jogo
 
 
 1 - Descompacte o arquivo InstaladorQAntro.zip;
