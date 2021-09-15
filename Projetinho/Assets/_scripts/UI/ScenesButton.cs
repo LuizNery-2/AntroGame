@@ -9,12 +9,14 @@ public class ScenesButton : MonoBehaviour
     GameObject creditos;
     [SerializeField]
     GameObject creditos1;
-
+    [SerializeField]
+    LevelLoader loadLevel;
+    [SerializeField]
+    string sceneName;
    
-    public string sceneName;
     public void scenesButton(){
 
-      SceneManager.LoadScene(sceneName);
+       loadLevel.LoadNextLevel(sceneName);
 
     }
 
@@ -26,7 +28,18 @@ public class ScenesButton : MonoBehaviour
 
 
     }
+    
+     public void scenesAnimator(){
 
+       loadLevel.LoadNextLevel(sceneName);
+
+    }
+
+    public void scenesNOanim(){
+
+       SceneManager.LoadScene(sceneName);
+
+    }
 
 
 

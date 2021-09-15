@@ -16,5 +16,8 @@ public class TriggerDamage : MonoBehaviour
                 
                 damageable.TakeDamage(dano);
             }
+
+            
        }
+
 }

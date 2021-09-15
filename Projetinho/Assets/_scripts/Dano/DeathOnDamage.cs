@@ -16,17 +16,19 @@ public class DeathOnDamage : MonoBehaviour , IDamageable
          
        }
       public void TakeDamage(int damage)
-      {        
-                if (damageSound != null)
-               {
-                   damageSound.Play();
-               }
-               if (playerLife.GetIsInvencible())
-               {
-                 playerLife.SetPlayerLife(damage);
-               }
+      {      
+           
+                    if (damageSound != null)
+                   {
+                       damageSound.Play();
+                   }
+                   if (playerLife.GetIsInvencible())
+                   {
+                     playerLife.SetPlayerLife(damage);
+                   }
+                   
+                   DamageEvent.Invoke();
                
-               DamageEvent.Invoke();
               
       }   
 }

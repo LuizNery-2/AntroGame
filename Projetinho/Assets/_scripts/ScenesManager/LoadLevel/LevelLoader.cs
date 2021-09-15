@@ -15,7 +15,18 @@ public class LevelLoader : MonoBehaviour
     
       
     public void LoadNextLevel(string cena){
-         StartCoroutine(LoadLevel(cena));
+         
+        
+         if(transition != null){
+
+          StartCoroutine(LoadLevel(cena));
+
+         }
+         else{
+
+             SceneManager.LoadScene(cena); 
+         }
+         
      
     }
 

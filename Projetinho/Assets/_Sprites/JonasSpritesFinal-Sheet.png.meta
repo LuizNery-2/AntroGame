@@ -1,0 +1,756 @@
+fileFormatVersion: 2
+guid: 3b946140f2b849c469f3fe1ec028147e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5410509135430099474
+    second: JonasSpritesFinal-Sheet_0
+  - first:
+      213: -7133373426270784584
+    second: JonasSpritesFinal-Sheet_1
+  - first:
+      213: -5265917352870083637
+    second: JonasSpritesFinal-Sheet_2
+  - first:
+      213: 5396748490435194658
+    second: JonasSpritesFinal-Sheet_3
+  - first:
+      213: 2754423917113753356
+    second: JonasSpritesFinal-Sheet_4
+  - first:
+      213: 527064318190793383
+    second: JonasSpritesFinal-Sheet_5
+  - first:
+      213: -1128377949130708923
+    second: JonasSpritesFinal-Sheet_6
+  - first:
+      213: -1319174923579065745
+    second: JonasSpritesFinal-Sheet_7
+  - first:
+      213: 704026188282341504
+    second: JonasSpritesFinal-Sheet_8
+  - first:
+      213: -8818792566902511544
+    second: JonasSpritesFinal-Sheet_9
+  - first:
+      213: -3130110627635461011
+    second: JonasSpritesFinal-Sheet_10
+  - first:
+      213: -4577029426630742270
+    second: JonasSpritesFinal-Sheet_11
+  - first:
+      213: -6714524098195463509
+    second: JonasSpritesFinal-Sheet_12
+  - first:
+      213: 7215818035570115047
+    second: JonasSpritesFinal-Sheet_13
+  - first:
+      213: 279230896061492039
+    second: JonasSpritesFinal-Sheet_14
+  - first:
+      213: -4026473338074042716
+    second: JonasSpritesFinal-Sheet_15
+  - first:
+      213: -697746247709327726
+    second: JonasSpritesFinal-Sheet_16
+  - first:
+      213: 7959982037703647408
+    second: JonasSpritesFinal-Sheet_17
+  - first:
+      213: -6065272533004907898
+    second: JonasSpritesFinal-Sheet_18
+  - first:
+      213: 5276718691437815521
+    second: JonasSpritesFinal-Sheet_19
+  - first:
+      213: -5249478716617225709
+    second: JonasSpritesFinal-Sheet_20
+  - first:
+      213: -3192399136465863676
+    second: JonasSpritesFinal-Sheet_21
+  - first:
+      213: -1544124872665087879
+    second: JonasSpritesFinal-Sheet_22
+  - first:
+      213: 4686940102828361180
+    second: JonasSpritesFinal-Sheet_23
+  - first:
+      213: -5057467126268553275
+    second: JonasSpritesFinal-Sheet_24
+  - first:
+      213: -1905168641364059908
+    second: JonasSpritesFinal-Sheet_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 198
+        width: 136
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeddea08b920ae4b0800000000000000
+      internalID: -5410509135430099474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 198
+        width: 137
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b33becb9aa210d90800000000000000
+      internalID: -7133373426270784584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 198
+        width: 141
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc30d9d4114bbe6b0800000000000000
+      internalID: -5265917352870083637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 198
+        width: 136
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22fe38aa82a15ea40800000000000000
+      internalID: 5396748490435194658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 198
+        width: 137
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fb76485fda93620800000000000000
+      internalID: 2754423917113753356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2714
+        y: 191
+        width: 188
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2bb837432805700800000000000000
+      internalID: 527064318190793383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 3247
+        y: 191
+        width: 136
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5482ea1db323750f0800000000000000
+      internalID: -1128377949130708923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3754
+        y: 191
+        width: 156
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a7773756951bde0800000000000000
+      internalID: -1319174923579065745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 4254
+        y: 191
+        width: 176
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0882421961435c900800000000000000
+      internalID: 704026188282341504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 4781
+        y: 191
+        width: 141
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848abe562ea5d9580800000000000000
+      internalID: -8818792566902511544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 5281
+        y: 191
+        width: 176
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d640d1cd7fc9f84d0800000000000000
+      internalID: -3130110627635461011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 5801
+        y: 191
+        width: 189
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f2a239cff1b70c0800000000000000
+      internalID: -4577029426630742270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 6341
+        y: 191
+        width: 141
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2624368e731d2a0800000000000000
+      internalID: -6714524098195463509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 6841
+        y: 191
+        width: 161
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e18306b54cb32460800000000000000
+      internalID: 7215818035570115047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 7342
+        y: 191
+        width: 180
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b2f02450700e300800000000000000
+      internalID: 279230896061492039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 7881
+        y: 191
+        width: 137
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aee38a05d71f18c0800000000000000
+      internalID: -4026473338074042716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 8369
+        y: 191
+        width: 175
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e7ce90c7b1156f0800000000000000
+      internalID: -697746247709327726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 8895
+        y: 198
+        width: 137
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0e0df4d79877e60800000000000000
+      internalID: 7959982037703647408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 9402
+        y: 237
+        width: 176
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a0f4434c2d3dba0800000000000000
+      internalID: -6065272533004907898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 9896
+        y: 250
+        width: 195
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6a0de41bbaa3940800000000000000
+      internalID: 5276718691437815521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 10423
+        y: 217
+        width: 162
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a8e009bea1627b0800000000000000
+      internalID: -5249478716617225709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 10943
+        y: 198
+        width: 136
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c30b146e152b3d0800000000000000
+      internalID: -3192399136465863676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 11456
+        y: 198
+        width: 137
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970c3f30c9a229ae0800000000000000
+      internalID: -1544124872665087879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 11833
+        y: 198
+        width: 265
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd50e98e03b5b0140800000000000000
+      internalID: 4686940102828361180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 12401
+        y: 216
+        width: 284
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c71c8bb17440d9b0800000000000000
+      internalID: -5057467126268553275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonasSpritesFinal-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 12984
+        y: 207
+        width: 266
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf81846f63b7f85e0800000000000000
+      internalID: -1905168641364059908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d43ac51ec638b1245b94d7407060ce82
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

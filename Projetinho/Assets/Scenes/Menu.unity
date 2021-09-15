@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -188,6 +188,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dea153c373e40c499bce6e16068f499, type: 3}
+--- !u!114 &223768513 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5937150389715940522, guid: 9dea153c373e40c499bce6e16068f499, type: 3}
+  m_PrefabInstance: {fileID: 223768512}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd7505c9202c91e409837d0a9f11ad31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &379682717
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,7 +280,7 @@ Transform:
   m_LocalScale: {x: 42.10626, y: 42.10626, z: 42.10626}
   m_Children: []
   m_Father: {fileID: 754116387}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &436753955
 GameObject:
@@ -283,7 +294,7 @@ GameObject:
   - component: {fileID: 436753960}
   - component: {fileID: 436753959}
   - component: {fileID: 436753958}
-  - component: {fileID: 436753957}
+  - component: {fileID: 436753961}
   m_Layer: 5
   m_Name: _botaoplay
   m_TagString: botaoPlay
@@ -310,18 +321,6 @@ RectTransform:
   m_AnchoredPosition: {x: 2, y: -64}
   m_SizeDelta: {x: 107.772, y: 33.898}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &436753957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 436753955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eaaf45e0e8634744b5bb294e32c8749, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &436753958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,9 +365,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 436753957}
-        m_TargetAssemblyTypeName: _ScenesControler, Assembly-CSharp
-        m_MethodName: StartScene
+      - m_Target: {fileID: 436753961}
+        m_TargetAssemblyTypeName: ScenesButton, Assembly-CSharp
+        m_MethodName: scenesButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -416,6 +415,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436753955}
   m_CullTransparentMesh: 1
+--- !u!114 &436753961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436753955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4eb478030551484e8662ec901eb54fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creditos: {fileID: 0}
+  creditos1: {fileID: 0}
+  loadLevel: {fileID: 223768513}
+  sceneName: CutsceneInicial
 --- !u!1 &754116383
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,7 +484,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -507,8 +522,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 379682719}
   - {fileID: 773913387}
+  - {fileID: 379682719}
   - {fileID: 436753956}
   - {fileID: 964611837}
   m_Father: {fileID: 0}
@@ -549,12 +564,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 754116387}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000019073, y: -0.000032425}
-  m_SizeDelta: {x: 800, y: 499.76}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &773913388
 MonoBehaviour:
@@ -606,6 +621,7 @@ GameObject:
   - component: {fileID: 964611840}
   - component: {fileID: 964611839}
   - component: {fileID: 964611838}
+  - component: {fileID: 964611841}
   m_Layer: 5
   m_Name: _botaoCreditos
   m_TagString: botaoCredito
@@ -676,9 +692,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 436753957}
-        m_TargetAssemblyTypeName: _ScenesControler, Assembly-CSharp
-        m_MethodName: IrparaCreditos
+      - m_Target: {fileID: 964611841}
+        m_TargetAssemblyTypeName: ScenesButton, Assembly-CSharp
+        m_MethodName: scenesButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -726,6 +742,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964611836}
   m_CullTransparentMesh: 1
+--- !u!114 &964611841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964611836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4eb478030551484e8662ec901eb54fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creditos: {fileID: 0}
+  creditos1: {fileID: 0}
+  loadLevel: {fileID: 223768513}
+  sceneName: Creditos
 --- !u!1 &1348811406
 GameObject:
   m_ObjectHideFlags: 0
